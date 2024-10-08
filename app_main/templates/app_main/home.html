@@ -1,0 +1,27 @@
+
+{% extends 'base.html' %}
+{% block content %}
+    {% include 'components/_nav.html' %}
+    <main class="container">
+       <div style="justify-content: flex-end">
+            <h1>Bosh sahifa</h1>
+       <hr>
+        {% if request.user.is_superuser %}
+            <br>
+            <a href="/users/">Barcha foydalanuvchilar</a>
+            <br>
+            <br>
+            <hr>
+        {% endif %}
+        <br>
+        <a href="">Shaxsiy kabinet</a>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <a href="/users/logout/">Tizimdan chiqish</a>
+
+        {% include 'components/_messages.html' %}
+       </div>
+    </main>
+{% endblock content %}

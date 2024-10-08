@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* === nav styles === */
+nav {
+    padding: 20px 0;
+    background-color: rgba(47, 47, 47, 0.592);
+}
+
+.container {
+    width: 1180px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.container .container-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+/* === nav styles === */
+
+.posts-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.post-card {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.input {
+    border: 2px solid gray;
+    padding: 8px 16px;
+    outline: none;
+    border-radius: 8px;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.registration-form {
+    height: 100vh;  /* vh -> vertical height */
+    width: 100vw;  /* vh -> vertical width */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-form-inner {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.registration-form-inner p {
+    text-align: center;
+}
+
+.registration-form-inner h2 {
+    text-align: center
+}
+
+.registration-form-inner input {
+    border: 2px solid gray;
+    padding: 8px 16px;
+    outline: none;
+    border-radius: 8px;
+    font-weight: 900;
+}
+
+.registration-form-inner input:focus {
+    border-color: black;
+}
+
+.registration-form-inner button {
+    transition: 0.1s;  /* 500ms */
+    border: 1px solid darkgreen;
+    background: green;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: 900;
+}
+
+.registration-form-inner button:active {
+    scale: 0.9;
+}
+
+.login-form {
+    height: 100vh;  /* vh -> vertical height */
+    width: 100vw;  /* vh -> vertical width */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-inner {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form-inner p {
+    text-align: center;
+}
+
+.login-form-inner h2 {
+    text-align: center
+}
+
+.login-form-inner input {
+    border: 2px solid gray;
+    padding: 8px 16px;
+    outline: none;
+    border-radius: 8px;
+    font-weight: 900;
+}
+
+.login-form-inner input:focus {
+    border-color: black;
+}
+
+.login-form-inner button {
+    transition: 0.1s;  /* 500ms */
+    border: 1px solid darkgreen;
+    background: green;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: 900;
+}
+
+.login-form-inner button:active {
+    scale: 0.9;
+}
+
+.login-form-inner button:hover {
+    background-color: darkgreen;
+}

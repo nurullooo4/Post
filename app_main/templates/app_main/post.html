@@ -1,0 +1,24 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'components/_nav.html' %}
+<main class="container">
+    <div class="posts-wrapper">
+        {% for post in posts %}
+            <a href="/posts/{{ post.id }}/" class="post-card">
+                <h2>{{ post.title }}</h2>
+                {% if post.image %}
+                    <img src="{{ post.image.url }}" alt="">
+                {% endif %}
+                <p>
+                    {{ post.body }}
+                </p>
+                <small>
+                    Owner: <b>{{ post.owner.username }}</b>
+                </small>
+            </a>
+        {% endfor %}
+    </div>
+</main>
+{% endblock content %}

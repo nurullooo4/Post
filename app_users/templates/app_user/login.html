@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <form action="" method="post" class="login-form">
+        {% csrf_token %}
+        <div class="login-form-inner">
+            <h2>Login</h2>
+            <hr>
+            <input type="text" name="username">
+            <input type="password" name="password">
+            <button type="submit"> Tizimga kirish </button>
+            <p>Don't have an account ?
+                <a href="/users/registration/" style="color: blue">Then be happy</a>
+                <br>
+                {% include 'components/_messages.html' %}
+            </p>
+        </div>
+    </form>
+{% endblock content %}

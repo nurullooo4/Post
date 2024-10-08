@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'components/_nav.html' %}
+<main class="container">
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">{{ btn_text }}</button>
+    </form>
+</main>
+{% include 'components/_messages.html' %}
+{% endblock content %}

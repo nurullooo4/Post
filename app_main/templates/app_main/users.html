@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for user in users %}
+    <div>
+        <h2>{{ user.id }}-Username: {{ user.username }}</h2>
+        <h3>Ismi: {{ user.first_name }}</h3>
+        <h3>Familiyasi: {{ user.last_name }}</h3>
+        <p>E-mail manzil: {{ user.email }}</p>
+        <p>
+            Superuser: {% if user.is_superuser %} ✅ {% else %} ❌ {% endif %}
+        </p>
+    </div>
+    <hr>
+{% endfor %}
+<br>
+    <a href="/"  style="color: blue"> Homepage </a>
+{% endblock content %}

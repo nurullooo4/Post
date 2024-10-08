@@ -1,0 +1,13 @@
+{% for message in messages %}
+        {% if message %}
+            {% if message.tags == "error" %}
+                <p style="color: red">{{ message }}</p>
+            {% elif message.tags == "info" %}
+                <p style="color: blue">{{ message }}</p>
+            {% elif message.tags == "success" %}
+                <p style="color: green">{{ message }}</p>
+            {% elif message.tags == "warning" %}
+                <p style="color: darkgoldenrod">{{ message }}</p>
+            {% endif %}
+        {% endif %}
+{% endfor %}

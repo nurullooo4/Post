@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <form action="" method="post" class="registration-form">
+        {% csrf_token %}
+        <div class="registration-form-inner">
+                <h2> Registration </h2>
+                <hr>
+                <input type="text" name="username" placeholder="username" required>
+                <input type="password" name="password1" placeholder="password" required>
+                <input type="password" name="password2" placeholder="Repeat the password" required>
+                <button type="submit"> Register in the system </button>
+                <p>
+                    Do you have an account?
+                    <a href="/users/login/" style="color: blue">Then log in.</a>
+                    <br>
+                    {% include 'components/_messages.html' %}
+                </p>
+        </div>
+    </form>
+{% endblock content %}
